@@ -849,7 +849,7 @@ MonoBehaviour:
   objectRoot: {fileID: 0}
   collectibleTransform: {fileID: 0}
   possibleObstacles:
-  - {fileID: 1264809080655014068, guid: 2730339828a1fb740b4d02d6e52b0985, type: 3}
+  - {fileID: 7653265019312907577, guid: 400c02aeb487b864caef6f89cba4463f, type: 3}
   - {fileID: 8941411705471235, guid: 088f3e130049d4649aa9b1cd3853ff4b, type: 3}
   - {fileID: 9136254481163943607, guid: 9cf9409213cb0de47a9107d7ca2d762c, type: 3}
   obstaclePositions:
