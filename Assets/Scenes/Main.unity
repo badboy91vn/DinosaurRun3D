@@ -5602,7 +5602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!20 &590897647
 Camera:
   m_ObjectHideFlags: 0
@@ -23200,7 +23200,7 @@ MonoBehaviour:
   maxSpeed: 30
   speedStep: 4
   laneOffset: 1.5
-  invincible: 1
+  invincible: 0
   consumableDatabase: {fileID: 11400000, guid: 5d316f81231c9964dadda0b50ca7ae6b, type: 2}
   skyMeshFilter: {fileID: 201362454}
   parallaxRoot: {fileID: 1617204952}

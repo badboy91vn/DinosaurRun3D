@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3286803093985268327}
   - component: {fileID: 6164197388038547887}
   m_Layer: 0
-  m_Name: IndustrialBackground
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2eb6f0cdad05e942ab60337525d0bb4, type: 2}
+  - {fileID: 2100000, guid: 8e85ce7ce36d0c9439cbbb4ca81381f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
