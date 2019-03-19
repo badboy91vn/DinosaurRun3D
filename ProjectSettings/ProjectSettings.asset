@@ -243,7 +243,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/Unity 3D/Projects/DinosaurRun3d/dinosaurrun3d.keystore
+  AndroidKeystoreName: D:/Unity 3D/Projects/DinosaurRun3d/hnllbhdinosaurrun3d.keystore
   AndroidKeyaliasName: dinosaurrun3d
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
