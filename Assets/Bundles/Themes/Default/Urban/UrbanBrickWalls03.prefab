@@ -76,7 +76,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012816806124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.01, z: -4.49}
+  m_LocalPosition: {x: 0, y: 0.01, z: -4.483}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000011598431040}
@@ -106,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000012820196322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.01, z: 4.5}
+  m_LocalPosition: {x: 0, y: 0.01, z: 4.482}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4000011598431040}
@@ -797,6 +797,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012473427996}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -867,11 +872,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
 --- !u!4 &6997453727747909304 stripped
@@ -887,6 +887,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012473427996}
     m_Modifications:
+    - target: {fileID: 6070626574059719051, guid: e9d41173825a9814f8a4f73ca0368914,
+        type: 3}
+      propertyPath: m_Name
+      value: pylon_wire
+      objectReference: {fileID: 0}
     - target: {fileID: 1236330270622768640, guid: e9d41173825a9814f8a4f73ca0368914,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -946,11 +951,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1003
-      objectReference: {fileID: 0}
-    - target: {fileID: 6070626574059719051, guid: e9d41173825a9814f8a4f73ca0368914,
-        type: 3}
-      propertyPath: m_Name
-      value: pylon_wire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d41173825a9814f8a4f73ca0368914, type: 3}

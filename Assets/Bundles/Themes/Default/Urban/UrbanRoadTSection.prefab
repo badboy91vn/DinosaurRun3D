@@ -199,6 +199,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -269,11 +274,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.000001
       objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
 --- !u!4 &4435019056437627966 stripped
@@ -289,6 +289,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -359,11 +364,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
 --- !u!4 &4387232660908297469 stripped
@@ -379,6 +379,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -449,11 +454,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.000001
       objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
 --- !u!4 &3950574328966248417 stripped
@@ -469,6 +469,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2003424947889619679, guid: d8f1aa8f326dad042ba5458b1eb61234,
+        type: 3}
+      propertyPath: m_Name
+      value: bus_stop (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3700324968548343824, guid: d8f1aa8f326dad042ba5458b1eb61234,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -539,11 +544,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2573005
       objectReference: {fileID: 0}
-    - target: {fileID: 2003424947889619679, guid: d8f1aa8f326dad042ba5458b1eb61234,
-        type: 3}
-      propertyPath: m_Name
-      value: bus_stop (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f1aa8f326dad042ba5458b1eb61234, type: 3}
 --- !u!4 &1451080139463003105 stripped
@@ -559,6 +559,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 1749610368335803527, guid: 43f78c6aaf8d7044d91fa717f1704073,
+        type: 3}
+      propertyPath: m_Name
+      value: road_4
+      objectReference: {fileID: 0}
     - target: {fileID: 1749610368335803522, guid: 43f78c6aaf8d7044d91fa717f1704073,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -624,11 +629,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0772712
       objectReference: {fileID: 0}
-    - target: {fileID: 1749610368335803527, guid: 43f78c6aaf8d7044d91fa717f1704073,
-        type: 3}
-      propertyPath: m_Name
-      value: road_4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f78c6aaf8d7044d91fa717f1704073, type: 3}
 --- !u!4 &4597682884092231102 stripped
@@ -644,6 +644,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -714,11 +719,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.000001
       objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
 --- !u!4 &545065160721365849 stripped
@@ -734,6 +734,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 1749610368335803527, guid: 43f78c6aaf8d7044d91fa717f1704073,
+        type: 3}
+      propertyPath: m_Name
+      value: road_4 (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1749610368335803522, guid: 43f78c6aaf8d7044d91fa717f1704073,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -799,11 +804,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0772705
       objectReference: {fileID: 0}
-    - target: {fileID: 1749610368335803527, guid: 43f78c6aaf8d7044d91fa717f1704073,
-        type: 3}
-      propertyPath: m_Name
-      value: road_4 (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f78c6aaf8d7044d91fa717f1704073, type: 3}
 --- !u!4 &3528987644791958668 stripped
@@ -819,6 +819,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 6091881802973970643, guid: b9f57700a2549504ab400214b746a71a,
+        type: 3}
+      propertyPath: m_Name
+      value: Motel_2
+      objectReference: {fileID: 0}
     - target: {fileID: 8469114458245140064, guid: b9f57700a2549504ab400214b746a71a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -884,11 +889,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6091881802973970643, guid: b9f57700a2549504ab400214b746a71a,
-        type: 3}
-      propertyPath: m_Name
-      value: Motel_2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f57700a2549504ab400214b746a71a, type: 3}
 --- !u!4 &6346206860723414555 stripped
@@ -904,6 +904,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2003424947889619679, guid: d8f1aa8f326dad042ba5458b1eb61234,
+        type: 3}
+      propertyPath: m_Name
+      value: bus_stop
+      objectReference: {fileID: 0}
     - target: {fileID: 3700324968548343824, guid: d8f1aa8f326dad042ba5458b1eb61234,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -973,11 +978,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2573
-      objectReference: {fileID: 0}
-    - target: {fileID: 2003424947889619679, guid: d8f1aa8f326dad042ba5458b1eb61234,
-        type: 3}
-      propertyPath: m_Name
-      value: bus_stop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f1aa8f326dad042ba5458b1eb61234, type: 3}
@@ -1069,6 +1069,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 1749610368335803527, guid: 43f78c6aaf8d7044d91fa717f1704073,
+        type: 3}
+      propertyPath: m_Name
+      value: road_4 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1749610368335803522, guid: 43f78c6aaf8d7044d91fa717f1704073,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1123,11 +1128,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1749610368335803527, guid: 43f78c6aaf8d7044d91fa717f1704073,
-        type: 3}
-      propertyPath: m_Name
-      value: road_4 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f78c6aaf8d7044d91fa717f1704073, type: 3}
@@ -1234,6 +1234,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 4208113853760296576, guid: 1fcca3f622d174e488b99675330dff72,
+        type: 3}
+      propertyPath: m_Name
+      value: tree_3
+      objectReference: {fileID: 0}
     - target: {fileID: 1715766675928116644, guid: 1fcca3f622d174e488b99675330dff72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1304,11 +1309,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.3892803
       objectReference: {fileID: 0}
-    - target: {fileID: 4208113853760296576, guid: 1fcca3f622d174e488b99675330dff72,
-        type: 3}
-      propertyPath: m_Name
-      value: tree_3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fcca3f622d174e488b99675330dff72, type: 3}
 --- !u!4 &5179101950013902471 stripped
@@ -1324,6 +1324,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1393,11 +1398,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
@@ -1584,6 +1584,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000012748154238}
     m_Modifications:
+    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
+        type: 3}
+      propertyPath: m_Name
+      value: lamppost (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 3423219771966941092, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1653,11 +1658,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2232095751147908012, guid: 8671c5d36f6abff4d9cdad3717b3a2a5,
-        type: 3}
-      propertyPath: m_Name
-      value: lamppost (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8671c5d36f6abff4d9cdad3717b3a2a5, type: 3}
