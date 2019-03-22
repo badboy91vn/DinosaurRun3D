@@ -38,7 +38,7 @@ public class LoadoutState : AState
 	[Header("Other Data")]
 	public Leaderboard leaderboard;
     public MissionUI missionPopup;
-	public Button runButton;
+	//public Button runButton;
 
 	public MeshFilter skyMeshFilter;
     public MeshFilter UIGroundFilter;
@@ -87,8 +87,8 @@ public class LoadoutState : AState
             StartCoroutine(MusicPlayer.instance.RestartAllStems());
         }
 
-        runButton.interactable = false;
-        runButton.GetComponentInChildren<Text>().text = "Loading...";
+        //runButton.interactable = false;
+        //runButton.GetComponentInChildren<Text>().text = "Loading...";
 
         if(m_PowerupToUse != Consumable.ConsumableType.NONE)
         {
@@ -144,15 +144,15 @@ public class LoadoutState : AState
 
     public override void Tick()
     {
-        if (!runButton.interactable)
-        {
-            bool interactable = ThemeDatabase.loaded && CharacterDatabase.loaded;
-            if(interactable)
-            {
-                runButton.interactable = true;
-                runButton.GetComponentInChildren<Text>().text = "Run!";
-            }
-        }
+        //if (!runButton.interactable)
+        //{
+        //    bool interactable = ThemeDatabase.loaded && CharacterDatabase.loaded;
+        //    if(interactable)
+        //    {
+        //        runButton.interactable = true;
+        //        runButton.GetComponentInChildren<Text>().text = "Run!";
+        //    }
+        //}
 
         if(m_Character != null)
         {
