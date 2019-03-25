@@ -45,7 +45,6 @@ public class AssetBundlesDatabaseHandler
 #else
         string[] bundles = AssetBundleManager.AssetBundleManifestObject.GetAllAssetBundles();
 #endif
-
         List<string> characterPackage = new List<string>();
         List<string> themePackage = new List<string>();
 
