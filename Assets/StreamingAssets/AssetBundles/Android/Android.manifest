@@ -1,10 +1,10 @@
 ManifestFileVersion: 0
-CRC: 2314883152
+CRC: 3738758709
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: themes/default
+      Name: characters/dino
       Dependencies: {}
     Info_1:
-      Name: characters/dino
+      Name: themes/default
       Dependencies: {}

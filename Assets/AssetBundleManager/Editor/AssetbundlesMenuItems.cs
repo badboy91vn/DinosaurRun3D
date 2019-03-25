@@ -33,8 +33,9 @@ namespace AssetBundles
         static void GetNames()
         {
             var names = AssetDatabase.GetAllAssetBundleNames();
-            foreach (string name in names)
+            foreach (string name in names) {
                 Debug.Log("Asset Bundle: " + name);
+            }
         }
 
         [MenuItem(k_SimulationMode)]
