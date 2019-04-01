@@ -1,6 +1,5 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-
 #include "UnityCG.cginc"
 
 struct appdata
@@ -22,7 +21,6 @@ sampler2D _MainTex;
 float4 _MainTex_ST;
 float _CurveStrength;
 
-
 v2f vert(appdata v)
 {
 	v2f o;
@@ -31,7 +29,6 @@ v2f vert(appdata v)
 	float _FadeDist = 50.0f;
 
 	o.vertex = UnityObjectToClipPos(v.vertex);
-
 
 	float dist = UNITY_Z_0_FAR_FROM_CLIPSPACE(o.vertex.z);
 
