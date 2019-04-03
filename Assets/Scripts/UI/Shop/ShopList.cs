@@ -5,15 +5,22 @@ public abstract class ShopList : MonoBehaviour
 {
     public GameObject prefabItem;
     public RectTransform listRoot;
+    public int k_UILayer;
 
-	public delegate void RefreshCallback();
+
+    public delegate void RefreshCallback();
 
 	protected RefreshCallback m_RefreshCallback;
 
+    private void Awake()
+    {
+        k_UILayer = LayerMask.NameToLayer("UI");
+    }
+
     public void Open()
     {
-        Populate();
         gameObject.SetActive(true);
+        Populate();
     }
 
     public void Close()

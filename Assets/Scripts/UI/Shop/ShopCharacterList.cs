@@ -1,20 +1,61 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 #if UNITY_ANALYTICS
 using UnityEngine.Analytics;
 #endif
 
 public class ShopCharacterList : ShopList
 {
+    private bool m_IsLoadingCharacter;
+    protected readonly Quaternion k_FlippedYAxisRotation = Quaternion.Euler(0f, 220f, 0f);
+
+    public IEnumerator PopulateCharacters(Transform charPosition)
+    {
+        if (!m_IsLoadingCharacter)
+        {
+            m_IsLoadingCharacter = true;
+            GameObject newChar = null;
+            while (newChar == null)
+            {
+                Character c = CharacterDatabase.GetCharacter(PlayerData.instance.characters[PlayerData.instance.usedCharacter]);
+
+                if (c != null)
+                {
+                    newChar = Instantiate(c.gameObject);
+                    Helpers.SetRendererLayerRecursive(newChar, k_UILayer);
+                    newChar.transform.SetParent(charPosition, false);
+                    newChar.transform.rotation = k_FlippedYAxisRotation;
+                    newChar.transform.localScale = new Vector3(100f, 100f, 100f);
+
+                    //if (m_Character != null)
+                    //    Destroy(m_Character);
+
+                    //m_Character = newChar;
+
+                    //m_Character.transform.localPosition = Vector3.right * 1000;
+                    ////animator will take a frame to initialize, during which the character will be in a T-pose.
+                    ////So we move the character off screen, wait that initialised frame, then move the character back in place.
+                    ////That avoid an ugly "T-pose" flash time
+                    //yield return new WaitForEndOfFrame();
+                    //m_Character.transform.localPosition = Vector3.zero;
+                }
+                else
+                    yield return new WaitForSeconds(1.0f);
+            }
+            m_IsLoadingCharacter = false;
+        }
+    }
+
     public override void Populate()
     {
-		m_RefreshCallback = null;
+        m_RefreshCallback = null;
         foreach (Transform t in listRoot)
         {
             Destroy(t.gameObject);
         }
 
-        foreach(KeyValuePair<string, Character> pair in CharacterDatabase.dictionary)
+        foreach (KeyValuePair<string, Character> pair in CharacterDatabase.dictionary)
         {
             Character c = pair.Value;
             if (c != null)
@@ -24,7 +65,9 @@ public class ShopCharacterList : ShopList
 
                 ShopItemListItem itm = newEntry.GetComponent<ShopItemListItem>();
 
-				itm.icon.sprite = c.icon;
+                StartCoroutine(PopulateCharacters(itm.icon.transform));
+
+                itm.icon.sprite = c.icon;
                 itm.nameText.text = c.characterName;
 				itm.pricetext.text = c.cost.ToString();
 
@@ -77,8 +120,6 @@ public class ShopCharacterList : ShopList
 			itm.buyButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Owned";
 		}
 	}
-
-
 
 	public void Buy(Character c)
     {

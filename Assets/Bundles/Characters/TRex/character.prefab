@@ -56,7 +56,7 @@ MonoBehaviour:
   - {fileID: 2840912079630401509}
   - {fileID: 2840912044124418759}
   - {fileID: 2840912044115016017}
-  animator: {fileID: 0}
+  animator: {fileID: 7438467109848893025}
   icon: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 819da6b208e0c0342b38dbbba363b740, type: 3}
   hitSound: {fileID: 8300000, guid: 4df05e5a3da67b74ab57e4fdbff8c1fa, type: 3}
