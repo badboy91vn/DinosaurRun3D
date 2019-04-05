@@ -14,6 +14,10 @@ public class LoadoutState : AState
 {
     public Canvas inventoryCanvas;
 
+    [Header("Coin & Premium UI")]
+    public Text CoinDisplay;
+    public Text PremiumDisplay;
+
     [Header("Char UI")]
     public Text charNameDisplay;
 	public RectTransform charSelect;
@@ -73,6 +77,9 @@ public class LoadoutState : AState
         charNameDisplay.text = "";
         themeNameDisplay.text = "";
 
+        CoinDisplay.text = "";
+        PremiumDisplay.text = "";
+
         k_UILayer = LayerMask.NameToLayer("UI");
 
         skyMeshFilter.gameObject.SetActive(true);
@@ -131,7 +138,10 @@ public class LoadoutState : AState
 
     public void Refresh()
     {
-		PopulatePowerup();
+        CoinDisplay.text = PlayerData.instance.coins.ToString();
+        PremiumDisplay.text = PlayerData.instance.premium.ToString();
+
+        PopulatePowerup();
 
         StartCoroutine(PopulateCharacters());
         //StartCoroutine(PopulateTheme());
@@ -163,7 +173,7 @@ public class LoadoutState : AState
 		//themeSelect.gameObject.SetActive(PlayerData.instance.themes.Count > 1);
     }
 
-	public void GoToStore()
+    public void GoToStore()
 	{
         UnityEngine.SceneManagement.SceneManager.LoadScene(k_ShopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
 	}
