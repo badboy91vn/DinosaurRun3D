@@ -63,6 +63,7 @@ public class LoadoutState : AState
 
 	protected Modifier m_CurrentModifier = new Modifier();
 
+    protected const string k_CharShopSceneName = "CharShop";
     protected const float k_CharacterRotationSpeed = 45f;
     protected const string k_ShopSceneName = "shop";
     protected const float k_OwnedAccessoriesCharacterOffset = -0.1f;
@@ -171,6 +172,11 @@ public class LoadoutState : AState
 
 		charSelect.gameObject.SetActive(PlayerData.instance.characters.Count > 1);
 		//themeSelect.gameObject.SetActive(PlayerData.instance.themes.Count > 1);
+    }
+
+    public void GoToCharShop()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(k_CharShopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
     }
 
     public void GoToStore()
