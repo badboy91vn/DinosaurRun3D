@@ -151,11 +151,11 @@ PlayerSettings:
     Android: com.hnllbh.dinorun
     Standalone: com.hnllbh.dinorun
     Tizen: 
-    iOS: 
+    iOS: com.hnllbh.dinorun
     tvOS: 
   buildNumber:
     Standalone: 1
-    iOS: 0
+    iOS: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
@@ -235,7 +235,7 @@ PlayerSettings:
   tvOSManualSigningProvisioningProfileID: 
   iOSManualSigningProvisioningProfileType: 0
   tvOSManualSigningProvisioningProfileType: 0
-  appleEnableAutomaticSigning: 2
+  appleEnableAutomaticSigning: 1
   iOSRequireARKit: 0
   appleEnableProMotion: 0
   clonedFromGUID: 093162f4d0db1dc4aa95946c8ae6a605
@@ -244,7 +244,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/UnityInstall/Project/DinosaurRun3D/hnllbhdinosaurrun3d.keystore
+  AndroidKeystoreName: hnllbhdinosaurrun3d.keystore
   AndroidKeyaliasName: dinosaurrun3d
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
