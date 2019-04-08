@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class CharShop : MonoBehaviour
 {
+
+
+
     public void CloseScene()
     {
         SceneManager.UnloadSceneAsync("CharShop");
@@ -14,4 +17,7 @@ public class CharShop : MonoBehaviour
             loadoutState.Refresh();
         }
     }
+
+
+
 }

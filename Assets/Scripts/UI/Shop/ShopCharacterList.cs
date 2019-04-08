@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.SceneManagement;
 #if UNITY_ANALYTICS
 using UnityEngine.Analytics;
 #endif
@@ -10,7 +11,13 @@ public class ShopCharacterList : ShopList
     private bool m_IsLoadingCharacter;
     protected readonly Quaternion k_FlippedYAxisRotation = Quaternion.Euler(0f, 220f, 0f);
 
-    public IEnumerator PopulateCharacters(Transform charPosition)
+    void Start()
+    {
+        PlayerData.Create();
+        Populate();
+    }
+
+    public IEnumerator PopulateCharacters(Transform charPosition, int charIndex)
     {
         if (!m_IsLoadingCharacter)
         {
@@ -18,7 +25,7 @@ public class ShopCharacterList : ShopList
             GameObject newChar = null;
             while (newChar == null)
             {
-                Character c = CharacterDatabase.GetCharacter(PlayerData.instance.characters[PlayerData.instance.usedCharacter]);
+                Character c = CharacterDatabase.GetCharacter(PlayerData.instance.characters[charIndex]); // PlayerData.instance.usedCharacter
 
                 if (c != null)
                 {
@@ -55,6 +62,7 @@ public class ShopCharacterList : ShopList
             Destroy(t.gameObject);
         }
 
+        int charIndex = 0;
         foreach (KeyValuePair<string, Character> pair in CharacterDatabase.dictionary)
         {
             Character c = pair.Value;
@@ -63,35 +71,36 @@ public class ShopCharacterList : ShopList
                 GameObject newEntry = Instantiate(prefabItem);
                 newEntry.transform.SetParent(listRoot, false);
 
-                ShopItemListItem itm = newEntry.GetComponent<ShopItemListItem>();
+                ShopItemChar itm = newEntry.GetComponent<ShopItemChar>();
 
-                StartCoroutine(PopulateCharacters(itm.icon.transform));
+                StartCoroutine(PopulateCharacters(itm.charPosition, charIndex));
 
-                itm.icon.sprite = c.icon;
-                itm.nameText.text = c.characterName;
-				itm.pricetext.text = c.cost.ToString();
+    //            itm.nameText.text = c.characterName;
+				//itm.pricetext.text = c.cost.ToString();
 
-				itm.buyButton.image.sprite = itm.buyButtonSprite;
+				//itm.buyButton.image.sprite = itm.buyButtonSprite;
 
-				if (c.premiumCost > 0)
-				{
-					itm.premiumText.transform.parent.gameObject.SetActive(true);
-					itm.premiumText.text = c.premiumCost.ToString();
-				}
-				else
-				{
-					itm.premiumText.transform.parent.gameObject.SetActive(false);
-				}
+				//if (c.premiumCost > 0)
+				//{
+				//	itm.premiumText.transform.parent.gameObject.SetActive(true);
+				//	itm.premiumText.text = c.premiumCost.ToString();
+				//}
+				//else
+				//{
+				//	itm.premiumText.transform.parent.gameObject.SetActive(false);
+				//}
 
-				itm.buyButton.onClick.AddListener(delegate () { Buy(c); });
+				//itm.buyButton.onClick.AddListener(delegate () { Buy(c); });
 
-				m_RefreshCallback += delegate() { RefreshButton(itm, c); };
-				RefreshButton(itm, c);
+				//m_RefreshCallback += delegate() { RefreshButton(itm, c); };
+				//RefreshButton(itm, c);
+
+                charIndex++;
             }
         }
     }
 
-	protected void RefreshButton(ShopItemListItem itm, Character c)
+	protected void RefreshButton(ShopItemChar itm, Character c)
 	{
 		if (c.cost > PlayerData.instance.coins)
 		{
@@ -177,5 +186,15 @@ public class ShopCharacterList : ShopList
 
         // Repopulate to change button accordingly.
         Populate();
+    }
+
+    public void CloseScene()
+    {
+        SceneManager.UnloadSceneAsync("CharShop");
+        LoadoutState loadoutState = GameManager.instance.topState as LoadoutState;
+        if (loadoutState != null)
+        {
+            loadoutState.Refresh();
+        }
     }
 }
