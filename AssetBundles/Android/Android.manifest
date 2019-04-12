@@ -1,13 +1,13 @@
 ManifestFileVersion: 0
-CRC: 2351335925
+CRC: 787069527
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: themes/default
       Dependencies: {}
     Info_1:
-      Name: characters/trex
+      Name: characters/velociraptor
       Dependencies: {}
     Info_2:
-      Name: characters/velociraptor
+      Name: characters/trex
       Dependencies: {}
