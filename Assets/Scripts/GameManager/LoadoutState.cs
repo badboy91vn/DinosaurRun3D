@@ -174,16 +174,6 @@ public class LoadoutState : AState
 		//themeSelect.gameObject.SetActive(PlayerData.instance.themes.Count > 1);
     }
 
-    public void GoToCharShop()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(k_CharShopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
-    }
-
-    public void GoToStore()
-	{
-        UnityEngine.SceneManagement.SceneManager.LoadScene(k_ShopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
-	}
-
     public void ChangeCharacter(int dir)
     {
         PlayerData.instance.usedCharacter += dir;
@@ -398,5 +388,15 @@ public class LoadoutState : AState
 		leaderboard.displayPlayer = false;
 		leaderboard.forcePlayerDisplay = false;
 		leaderboard.Open();
+    }
+
+    public void GoToCharShop()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(k_CharShopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+    }
+
+    public void GoToStore()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(k_ShopSceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
     }
 }
